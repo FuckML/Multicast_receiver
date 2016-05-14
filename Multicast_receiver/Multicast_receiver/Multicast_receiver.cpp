@@ -44,6 +44,9 @@ void main() {
     }
     printf("%s\n", buf);
   }
+  FILE *fp;
+  fp = fopen("news", "r");
+  
   closesocket(recvSock);
   WSACleanup();
   
